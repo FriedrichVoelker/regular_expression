@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reguläre Ausdrücke</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body onload="onLoaded()">
+
+    <input type="checkbox" id="is_en" style="display:none">
+
+    <div class="grid-container">
+        <div>
+            <p>
+                <label>Regulärer Ausdruck</label>
+                <input type="text" name="regex" id="regex">
+            </p>
+            <p>
+                <label>String</label>
+                <input type="text" name="string" id="string">
+            </p>
+        </div>
+        <div>
+
+            <aside style="width:100%;margin:10px;padding:10px;">
+                Oder: a|b <br>
+                Konkatenation: ab <br>
+                Widerholung: a*  <br>
+                Klammern: (a) <br>
+                Einmal oder nie: a? <br>
+                Ein- oder mehrmals: a+ <br>
+                Kleene Stern: a* <br>
+                Genau n mal: a{n} <br>
+                Mindestens n mal: a{n,} <br>
+                Mindestens n aber maxmimal m mal: a{n,m} <br>
+            </aside>
+        </div>
+
+    </div>
+
+    <h2 id="result"></h2>
+
+    <button id="check_btn">Check</button>
+
+    <input type="checkbox" id="is_dev" style="display:none">
+</body>
+</html>
